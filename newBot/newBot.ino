@@ -28,9 +28,15 @@ void ICACHE_RAM_ATTR detectsMovement() {
 
 void sendStatus() {
   float temperature = dht.readTemperature();
-  String statusMessage = "Motion: " + String(motionDetected ? "Detected" : "Not Detected") +
-                         "\nTemperature: " + String(temperature) + "°C";
-  bot.sendMessage(CHAT_ID, statusMessage, "");
+  // Check if the temperature is a valid value
+  if (!isnan(temperature)) {
+    String statusMessage = "Motion: " + String(motionDetected ? "Detected" : "Not Detected") +
+                           "\nTemperature: " + String(temperature) + "°C";
+    bot.sendMessage(CHAT_ID, statusMessage, "");
+  } else {
+    bot.sendMessage(CHAT_ID, "Motion: " + String(motionDetected ? "Detected" : "Not Detected") +
+                             "\nTemperature: Not Available", "");
+  
 }
 
 void handleMessages() {
