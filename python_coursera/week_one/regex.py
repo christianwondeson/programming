@@ -1,5 +1,6 @@
 # this code will explain about some method of regex expression
 import re
+
 sOne = "Michael Jackson is the best"
 
 pattern = "Jackson"
@@ -18,8 +19,8 @@ match = re.search(pattern, text)
 if match:
     print("Phone number found:", match.group())
 else:
-    print("No match")    
-    
+    print("No match")
+
 # this code will explain using \d\d\d\d\d\d\d\d will select my 0-9 digits
 
 pattern = "\W"  # Matches any non-word character
@@ -41,7 +42,7 @@ print(result)
 split_array = re.split("\s", s2)
 
 # The split_array contains all the substrings, split by whitespace characters
-print(split_array) 
+print(split_array)
 
 # Define the regular expression pattern to search for
 pattern = r"King of Pop"
@@ -53,7 +54,7 @@ replacement = "legend"
 new_string = re.sub(pattern, replacement, s2, flags=re.IGNORECASE)
 
 # The new_string contains the original string with the pattern replaced by the replacement string
-print(new_string) 
+print(new_string)
 
 # Write your code below and press Shift+Enter to execute
 
@@ -63,7 +64,7 @@ print(d[0:3])
 
 
 # Write your code below and press Shift+Enter to execute
-f2="YOU ARE RIGHT"
+f2 = "YOU ARE RIGHT"
 print(f2.lower())
 
 # Write your code below and press Shift+Enter to execute
@@ -81,16 +82,16 @@ print(g.find("snow"))
 # Write your code below and press Shift+Enter to execute
 print(g.replace("Mary", "Bob"))
 
-g.replace(',','.')
+g.replace(",", ".")
 
-str2= "How much wood would a woodchuck chuck, if a woodchuck could chuck wood?"
+str2 = "How much wood would a woodchuck chuck, if a woodchuck could chuck wood?"
 
 # Write your code below and press Shift+Enter to execute
 new_str2 = re.findall(r"woo", str2)
 print(new_str2)
 
 
-str1= "The quick brown fox jumps over the lazy dog."
+str1 = "The quick brown fox jumps over the lazy dog."
 
 # Write your code below and press Shift+Enter to execute
 new_str1 = re.sub(r"fox", "bear", str1)
