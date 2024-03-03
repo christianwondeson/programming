@@ -1,13 +1,6 @@
-# functions
-def add(num):
-    """
-    adds 1 to num
-    this is documentation
-    """
-    sum = num + 1
-    print(num, "if you add one", sum)
-    return sum
-
-
-add(3)
-help(add)
+if __name__ == '__main__':
+    n = int(input())
+    scores = list(map(int, input().split()))
+    scores.sort(reverse=True)
+    runner_up_score = next((score for score in scores if score < max(scores)), None)
+    print(runner_up_score)
