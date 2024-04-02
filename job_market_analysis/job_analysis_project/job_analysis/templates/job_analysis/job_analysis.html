@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Job List</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'job_analysis/css/styles.css' %}"
+    />
+  </head>
+  <body>
+    <h1>Job Postings</h1>
+    <ul>
+      {% for job_posting in job_postings %}
+      <li>{{ job_posting.title }} - {{ job_posting.company }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+2024-04-02 12:08:01.235 EAT [17640] LOG:  starting PostgreSQL 13.3, compiled by Visual C++ build 1916, 64-bit
+2024-04-02 12:08:01.237 EAT [17640] LOG:  listening on IPv6 address "::1", port 5432
+2024-04-02 12:08:01.237 EAT [17640] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-02 12:08:01.383 EAT [6556] LOG:  database system was shut down at 2024-04-02 12:05:39 EAT
+2024-04-02 12:08:01.439 EAT [17640] LOG:  database system is ready to accept connections
+2024-04-02 12:20:52.884 EAT [22292] ERROR:  canceling statement due to user request
+2024-04-02 12:20:52.885 EAT [17640] LOG:  received fast shutdown request
+2024-04-02 12:20:52.894 EAT [17640] LOG:  aborting any active transactions
+2024-04-02 12:20:52.894 EAT [21816] FATAL:  terminating connection due to administrator command
+2024-04-02 12:20:52.910 EAT [17640] LOG:  background worker "logical replication launcher" (PID 22292) exited with exit code 1
+2024-04-02 12:20:52.925 EAT [15604] LOG:  shutting down
+2024-04-02 12:20:53.007 EAT [17640] LOG:  database system is shut down
